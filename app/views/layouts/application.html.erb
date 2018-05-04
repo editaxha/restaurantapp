@@ -8,12 +8,31 @@
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+    <nav class="top-bar foundation-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1>
+            <a href="#">Restaurants</a>
+          </h1>
+        </li>
+      </ul>
+      <section class="top-bar-serction">
+        <ul class="right">
+          <li>
+            <%= link_to 'Manage restaurants', '/admin' %>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <div class="row">
+      <div class="large-12 columns">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

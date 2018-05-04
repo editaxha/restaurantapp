@@ -31,9 +31,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'ancestry'
 gem 'rails_admin'
 gem 'foundation-rails'
-# gem 'react-rails'
-# gem 'flux-rails-assets'
-# gem 'lodash-rails'
+gem 'react-rails'
+gem 'flux-rails-assets'
+gem 'lodash-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
